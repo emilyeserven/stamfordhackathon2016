@@ -1,7 +1,8 @@
-.page-header {
-    color:#fff;
+.page-head-container {
+    background-color: #1D80C3;
+    padding-left: 30px;
 }
-body {
-  background-color: #1D80C3;
-  margin-left: 30px;
+small {
+    color:#eee;
+    /*color:#ddd*/
 }
