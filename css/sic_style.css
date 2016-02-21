@@ -1,15 +1,34 @@
 .page-header {
     color:#fff;
+    max-width:1000px;
+    margin: 0 auto;
+    border-bottom: 0;
 }
 .page-header small {
-  color:#ddd;
+  color:#fff;
 }
 .page-head-container {
   background-color: #1D80C3;
-  padding-left: 30px;
+  display:block;
+  padding: 10px 0 5px 0;
 }
 .info-container {
   max-width: 1000px;
+  margin: 15px auto;
+}
+.data-container {
+  max-width: 1000px;
+  margin:30px auto;
+}
+.fancy-title {
+  margin-bottom:15px;
+  background-color:#67ACD9;
+  padding:10px 0 10px 0;
+}
+.fancy-title h2 {
+  max-width:1000px;
+  margin:0 auto;
+  color:#fff;
 }
 .data-left-col {
   float:left;
@@ -27,10 +46,52 @@
   width:100%;
   display:block;
   margin-bottom:15px;
+  background-color:#eee;
+  padding: 3px 0;
 }
 .room-num {
-  background-color: #000;
+  background-color: #054F7F;
   color:#fff;
-  padding:5px 3px;
-  width:100px;
+  padding:5px 10px;
+  font-size: 20px;
+}
+.glyphicon {
+  font-size:20px;
+  margin-left: 5px;
+}
+.room-name {
+  font-size:15px;
+  margin-left: 10px;
+}
+.map {
+  margin-top:30px;
+  width: 100%;
+  height: 300px;
+  display:block;
+  background-color: #eee;
+}
+.clearfix:after {
+     visibility: hidden;
+     display: block;
+     font-size: 0;
+     content: " ";
+     clear: both;
+     height: 0;
+     }
+.clearfix { display: inline-block; }
+/* start commented backslash hack \*/
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+/* close commented backslash hack */
+.footer {
+  background-color:#1D80C3;
+  padding:20px 0;
+}
+.footer-content {
+  max-width:1000px;
+  margin: 0 auto;
+  color:#fff;
+}
+.footer-content a {
+  color:#C0E2F8;
 }
