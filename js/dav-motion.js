@@ -46,10 +46,10 @@
                         }
 
                         if(time === lastTime){
-                            $('#sic_dav').addClass("glyphicon-eye-open");
+                            $('#sic_dav').addClass("glyphicon-eye-open").removeClass("glyphicon-search");
                         }
                         else{
-                            $('#sic_dav').addClass("Mglyphicon-eye-close");
+                            $('#sic_dav').addClass("glyphicon-eye-close").removeClass("glyphicon-search");
                             lastTime = time;
                         }
                     },
