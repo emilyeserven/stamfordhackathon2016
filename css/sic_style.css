@@ -49,6 +49,9 @@
   background-color:#eee;
   padding: 3px 0;
 }
+.key-box {
+  display:inline-block;
+}
 .key-box.col-third {
   width:33% !important;
 }
@@ -58,6 +61,7 @@
 }
 .col-third.col-right {
   float:right;
+  margin-left: 0%;
 }
 .col-third.col-center {
   float:none;
