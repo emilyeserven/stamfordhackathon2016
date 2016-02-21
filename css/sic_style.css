@@ -14,11 +14,15 @@
 }
 .info-container {
   max-width: 1000px;
-  margin: 15px auto;
+  margin: 15px auto 45px;
 }
-.data-container, .map-container {
+.data-container {
   max-width: 1000px;
-  margin:30px auto;
+  margin:15px auto 30px;
+}
+.map-container {
+  max-width: 1000px;
+  margin:15px auto 0;
 }
 .fancy-title {
   margin-bottom:15px;
@@ -48,6 +52,9 @@
   margin-bottom:15px;
   background-color:#eee;
   padding: 3px 0;
+}
+.data-explain {
+  margin-bottom:15px;
 }
 .key-box {
   display:inline-block;

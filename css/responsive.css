@@ -9,6 +9,13 @@
   padding: 0 30px;
   }
 }
+@media screen and (max-width:570px) {
+.key-box.col-third {
+  width: 100% !important;
+  float: none;
+  margin: 0 !important;
+}
+}
 @media screen and (max-width:560px) {
   .col-left, .col-right {
   float: none;
@@ -16,6 +23,6 @@
   margin: 0;
   }
   .map-col.col-right {
-    margin top -10px;
+    margin-top: -10px;
     }
 }
