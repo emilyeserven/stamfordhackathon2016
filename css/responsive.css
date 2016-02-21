@@ -5,9 +5,11 @@
   .fancy-title h2 {
   padding-left: 30px;
   }
-  .info-container, .data-container {
+  .info-container, .data-container, .footer-content {
   padding: 0 30px;
   }
+}
+@media screen and (max-width:560px) {
   .data-left-col, .data-right-col {
   float: none;
   width: 100%;
