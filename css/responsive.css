@@ -10,7 +10,7 @@
   }
 }
 @media screen and (max-width:560px) {
-  .data-left-col, .data-right-col {
+  .col-left, .col-right {
   float: none;
   width: 100%;
   margin: 0;
