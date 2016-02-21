@@ -1,0 +1,16 @@
+@media screen and (max-width:1030px) {
+  .page-header {
+  padding-left: 30px;
+  }
+  .fancy-title h2 {
+  padding-left: 30px;
+  }
+  .info-container, .data-container {
+  padding: 0 30px;
+  }
+  .data-left-col, .data-right-col {
+  float: none;
+  width: 100%;
+  margin: 0;
+  }
+}
