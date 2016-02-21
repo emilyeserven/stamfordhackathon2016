@@ -1,8 +1,36 @@
-.page-head-container {
-    background-color: #1D80C3;
-    padding-left: 30px;
+.page-header {
+    color:#fff;
 }
-small {
-    color:#eee;
-    /*color:#ddd*/
+.page-header small {
+  color:#ddd;
+}
+.page-head-container {
+  background-color: #1D80C3;
+  padding-left: 30px;
+}
+.info-container {
+  max-width: 1000px;
+}
+.data-left-col {
+  float:left;
+  display: block;
+  width:49%;
+  margin-right:1%;
+}
+.data-right-col {
+  float:right;
+  display:block;
+  width:49%;
+  margin-left:1%;
+}
+.data-box {
+  width:100%;
+  display:block;
+  margin-bottom:15px;
+}
+.room-num {
+  background-color: #000;
+  color:#fff;
+  padding:5px 3px;
+  width:100px;
 }
