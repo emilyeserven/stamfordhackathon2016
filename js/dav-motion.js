@@ -1,4 +1,5 @@
-/*var json = {
+
+            /*var json = {
                 "id": "d56c8df1e5bb70955e3aa8922",
                 "creationDate": 1456004894749,
                 "parentDropId":  {
@@ -18,11 +19,39 @@
                 }
             };*/
 
+            var places = {
+                "dav" : {
+                    "time" : 0,
+                    "lastTime" : 0,
+                    "first" : true,
+                    "location" : "Davenport"
+                },
+                "wad" : {
+                    "time" : 0,
+                    "lastTime" : 0,
+                    "first" : true,
+                    "location" : "Whatever WAD Means"
+                },
+                "2flcowk" : {
+                    "time" : 0,
+                    "lastTime" : 0,
+                    "first" : true,
+                    "location" : "2nd Floor Room w/ Fruit Ninja"
+                },
+                "audlob" : {
+                    "time" : 0,
+                    "lastTime" : 0,
+                    "first" : true,
+                    "location" : "Auditorium Lobby?"
+                }
+            }
+
             var json;
             var motion;// = json.elems.motion.value;
+            var source;// = json.elems.source.value;
             var lastTime;// = json.creationDate;
             var time;
-            var first = true;
+            //var first = true;
 
             $(document).ready(function(){
                 update();
@@ -34,26 +63,36 @@
                 $.ajax({
                     url : "https://api.flowthings.io/v0.1/nick/drop/f56c8d69568056d40ae62130f",
                     success: function(data){
-                        json = data.body[0];
+                        json = data.body[0]; //Get JSON for one sensor
                         //console.log(json);
-                        motion = json.elems.motion.value;
-                        console.log(motion)
-                        time = json.creationDate;
+
+                        motion = json.elems.motion.value; //Motion value (always true)
+                        console.log(motion);
+
+                        source = json.elems.source.value; //Sensor source
+                        console.log(source);
+
+                        time = json.creationDate; //Time sensor was set off
                         console.log(time);
-                        if(first){
-                            lastTime = time;
-                            first = false;
+
+                        if(places[source].first){
+                            places[source].lastTime = time;
+                            places[source].first = false;
                         }
 
-                        if(time === lastTime){
-                            $('#sic_dav').addClass("glyphicon-eye-open").removeClass("glyphicon-search glyphicon-eye-close");
+                        if(places[source].time === places[source].lastTime){
+                            //$('#sic_dav').text("No motion in " + places[source].location);
+                            $('#'+source).addClass("glyphicon-eye-open").removeClass("glyphicon-search glyphicon-eye-close");
                         }
                         else{
-                            $('#sic_dav').addClass("glyphicon-eye-close").removeClass("glyphicon-search glyphicon-eye-open");
-                            lastTime = time;
+                            //$('#sic_dav').text("Motion detected in " + places[source].location);
+                            places[source].lastTime = places[source].time;
+                            $('#'+source)..addClass("glyphicon-eye-close").removeClass("glyphicon-search glyphicon-eye-open");
                         }
                     },
                     headers : {"X-Auth-Token" : "nDrAs2skQbkqCHImjOo0NUnDdY94WFeH"}
                 });
 
+                                            //$('#sic_dav').addClass("glyphicon-eye-open").removeClass("glyphicon-search glyphicon-eye-close");
+                                            //$('#sic_dav').addClass("glyphicon-eye-close").removeClass("glyphicon-search glyphicon-eye-open");
             }
