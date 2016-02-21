@@ -15,7 +15,7 @@
   width: 100%;
   margin: 0;
   }
-  .col-left.map-col img {
-  margin-bottom: -15px;
-  }
+  .map-col.col-right {
+    margin top -10px;
+    }
 }
