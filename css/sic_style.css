@@ -30,13 +30,13 @@
   margin:0 auto;
   color:#fff;
 }
-.data-left-col {
+.col-left {
   float:left;
   display: block;
   width:49%;
   margin-right:1%;
 }
-.data-right-col {
+.col-right {
   float:right;
   display:block;
   width:49%;
