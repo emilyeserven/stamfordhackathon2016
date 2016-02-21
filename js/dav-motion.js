@@ -55,7 +55,7 @@
 
             $(document).ready(function(){
                 update();
-                setInterval(update, 1000);
+                setInterval(update, 500);
             });
 
             function update(){
@@ -87,7 +87,7 @@
                         else{
                             //$('#sic_dav').text("Motion detected in " + places[source].location);
                             places[source].lastTime = places[source].time;
-                            $('#'+source)..addClass("glyphicon-eye-close").removeClass("glyphicon-search glyphicon-eye-open");
+                            $('#'+source).addClass("glyphicon-eye-close").removeClass("glyphicon-search glyphicon-eye-open");
                         }
                     },
                     headers : {"X-Auth-Token" : "nDrAs2skQbkqCHImjOo0NUnDdY94WFeH"}
