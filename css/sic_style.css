@@ -49,6 +49,20 @@
   background-color:#eee;
   padding: 3px 0;
 }
+.key-box.col-third {
+  width:33% !important;
+}
+.col-third.col-left {
+  float:left;
+  margin-right: 1%;
+}
+.col-third.col-right {
+  float:right;
+}
+.col-third.col-center {
+  float:none;
+  margin:0 auto;
+}
 .room-num {
   background-color: #054F7F;
   color:#fff;
